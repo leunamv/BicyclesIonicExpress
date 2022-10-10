@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+    **Bicycles News**
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="../../assets/iguazu1.jpg" alt="bicycles"/>
+      </ion-avatar>
+      <ion-label>
+        <h3>Manuel Velazquez</h3>
+        <p>October 9, 2022</p>
+      </ion-label>
+      <ion-icon slot ="end" name ="thumbs-up"></ion-icon>
+
+
+    </ion-item>
+    <img src="../../assets/iguazu2.jpg" alt ="bicycles"/>
+    <ion-card-header>
+      <ion-card-subtitle>FOR EVER ADVENTURE</ion-card-subtitle>
+      <ion-card-title color="primary">Green Bike Nature<br>in Iguazu Waterfall</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+    <ion-footer>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>1'5k likes</div>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="text"></ion-icon>
+            <div class="wrap-text">4 comentarios</div>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="time"></ion-icon>
+            <div>Hace 11 horas</div>
+          </ion-col>
+    
+        </ion-row>
+      </ion-grid>
+    </ion-footer>
+  </ion-card>
+  <div>
+    <h1 class="brand">Brand: {{brand}}</h1>
+    <p>Model: {{model}}</p>
+  </div>
+
+  <ion-button expand="block" (click)="gotoMyBicycles()">SHOW BICYCLES</ion-button>
+</ion-content>
